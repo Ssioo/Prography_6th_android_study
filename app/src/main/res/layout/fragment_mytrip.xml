@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.prography.android_6th_study.viewmodels.MyTripViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_title_mytrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="지금 바로 떠나보세요!"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle_mytrip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_mytrip"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="여행일정 관리는 [My 트립]에서 한번에! 다른 곳에서 예약한 일정도 추가할 수 있어요."
+            android:textColor="@color/color_grey"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbtn_add_plan_mytrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_mytrip"
+            android:layout_marginTop="16dp"
+            android:text="일정 추가"
+            android:letterSpacing="0"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/ic_add_circle"
+            app:iconSize="12sp"
+            app:cornerRadius="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_theme_mytrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여행 테마"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mbtn_add_plan_mytrip"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/tv_theme_more_mytrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더 보기"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/tv_theme_mytrip"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackground" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_theme_mytrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_theme_mytrip"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:nestedScrollingEnabled="false"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_theme"/>
+
+        <TextView
+            android:id="@+id/tv_populars_mytrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인기 여행지"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_theme_mytrip"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/tv_populars_more_mytrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더 보기"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/tv_populars_mytrip"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackground" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_populars_mytrip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_populars_mytrip"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_populars"
+            tools:itemCount="6"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

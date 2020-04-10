@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fg_home"
+    android:id="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/fg_home"
+        android:label="HOME"
+        android:name="com.prography.android_6th_study.views.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_to_promotion"
+            app:destination="@id/fg_promotion"
+            app:popUpTo="@id/fg_promotion"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_mytrip"
+            app:destination="@id/fg_mytrip"
+            app:popUpTo="@id/fg_mytrip"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_mypage"
+            app:destination="@id/fg_mypage"
+            app:popUpTo="@id/fg_mypage"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fg_promotion"
+        android:label="PROMOTION"
+        android:name="com.prography.android_6th_study.views.PromotionFragment"
+        tools:layout="@layout/fragment_promotion">
+
+        <action
+            android:id="@+id/action_to_mytrip"
+            app:destination="@id/fg_mytrip"
+            app:popUpTo="@id/fg_mytrip"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_mypage"
+            app:destination="@id/fg_mypage"
+            app:popUpTo="@id/fg_mypage"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_home"
+            app:destination="@id/fg_home"
+            app:popUpTo="@id/fg_home"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fg_mytrip"
+        android:label="MYTRIP"
+        android:name="com.prography.android_6th_study.views.MyTripFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_to_promotion"
+            app:destination="@id/fg_promotion"
+            app:popUpTo="@id/fg_promotion"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_mypage"
+            app:destination="@id/fg_mypage"
+            app:popUpTo="@id/fg_mypage"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_home"
+            app:destination="@id/fg_home"
+            app:popUpTo="@id/fg_home"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fg_mypage"
+        android:label="MYPAGE"
+        android:name="com.prography.android_6th_study.views.MyPageFragment"
+        tools:layout="@layout/fragment_mypage">
+        <action
+            android:id="@+id/action_to_promotion"
+            app:destination="@id/fg_promotion"
+            app:popUpTo="@id/fg_promotion"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_mytrip"
+            app:destination="@id/fg_mytrip"
+            app:popUpTo="@id/fg_mytrip"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_home"
+            app:destination="@id/fg_home"
+            app:popUpTo="@id/fg_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_to_contact"
+            app:destination="@id/fg_contact" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fg_contact"
+        android:label="CONTACT"
+        android:name="com.prography.android_6th_study.views.ContactFragment"
+        tools:layout="@layout/fragment_contact">
+
+
+    </fragment>
+
+</navigation>

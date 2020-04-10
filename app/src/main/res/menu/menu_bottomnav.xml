@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fg_home"
+        android:title="홈"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/fg_promotion"
+        android:title="프로모션"
+        android:icon="@drawable/ic_promotion"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/fg_mytrip"
+        android:title="My 트립"
+        android:icon="@drawable/ic_trip"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/fg_mypage"
+        android:title="My 계정"
+        android:icon="@drawable/ic_mypage"
+        app:showAsAction="always"/>
+
+</menu>
