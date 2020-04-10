@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="16dp"
-            android:onClick="@{() -> viewmodel.onClickChat()"
+            android:onClick="@{() -> viewmodel.onClickChat()}"
             android:padding="16dp">
 
             <TextView
@@ -89,7 +89,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/v_separator2_contact"
-            android:onClick="@{() -> viewmodel.onClickEmail()"
+            android:onClick="@{() -> viewmodel.onClickEmail()}"
             android:padding="16dp">
 
             <TextView
@@ -134,7 +134,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/v_separator3_contact"
-            android:onClick="@{() -> viewmodel.onClickFaq()"
+            android:onClick="@{() -> viewmodel.onClickFaq()}"
             android:padding="16dp">
 
             <TextView
@@ -179,7 +179,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/v_separator4_contact"
-            android:onClick="@{() -> viewmodel.onClickCallCenter()"
+            android:onClick="@{() -> viewmodel.onClickCallCenter()}"
             android:padding="16dp">
 
             <TextView
@@ -227,7 +227,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/v_separator5_contact"
-            android:onClick="@{() -> viewmodel.onClickCall()"
+            android:onClick="@{() -> viewmodel.onClickCall()}"
             android:padding="16dp">
 
             <TextView

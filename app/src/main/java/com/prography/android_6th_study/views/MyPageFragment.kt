@@ -6,11 +6,12 @@ import android.view.*
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.prography.android_6th_study.BaseFragment
+import com.prography.android_6th_study.BaseViewModel
 import com.prography.android_6th_study.R
 import com.prography.android_6th_study.databinding.FragmentMypageBinding
 import com.prography.android_6th_study.viewmodels.MyPageViewModel
 
-class MyPageFragment : BaseFragment(), MyPageViewModel.NavigationListener {
+class MyPageFragment : BaseFragment(), BaseViewModel.OnNavigateListener {
 
     private lateinit var mContext: Context
     private lateinit var binding: FragmentMypageBinding

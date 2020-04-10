@@ -3,6 +3,8 @@ package com.prography.android_6th_study.views
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.marginTop
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -24,6 +26,7 @@ class ChatActivity : BaseActivity() {
 
         /* ActionBar */
         setSupportActionBar(binding.tbChat)
+        (binding.tbChat.layoutParams as ConstraintLayout.LayoutParams).setMargins(0, getStatusBarHeight(), 0, 0)
         var actionBar = supportActionBar
         actionBar!!.setDisplayHomeAsUpEnabled(true)
         actionBar.setHomeAsUpIndicator(R.drawable.ic_back)

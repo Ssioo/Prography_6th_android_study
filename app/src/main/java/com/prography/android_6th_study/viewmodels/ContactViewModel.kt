@@ -4,7 +4,6 @@ import com.prography.android_6th_study.BaseViewModel
 
 class ContactViewModel : BaseViewModel() {
 
-
     fun onClickChat() {
         mNavListener.onNavigate()
     }

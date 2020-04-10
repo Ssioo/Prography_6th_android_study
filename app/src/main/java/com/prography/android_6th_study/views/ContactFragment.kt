@@ -22,6 +22,7 @@ class ContactFragment : BaseFragment(), BaseViewModel.OnNavigateListener {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentContactBinding.inflate(inflater, container, false)
+        binding.lifecycleOwner = this
         vmContact = ViewModelProvider(this)[ContactViewModel::class.java]
         vmContact.mNavListener = this
         binding.viewmodel = vmContact

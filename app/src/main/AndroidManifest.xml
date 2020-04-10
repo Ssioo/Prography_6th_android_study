@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.prography.android_6th_study.views.MainActivity"/>
-        <activity android:name=".views.ChatActivity" />
+        <activity android:name=".views.ChatActivity"
+            android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>
